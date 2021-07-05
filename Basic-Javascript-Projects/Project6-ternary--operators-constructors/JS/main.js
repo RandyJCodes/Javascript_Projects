@@ -1,22 +1,16 @@
 function Ride_Function() {
     var Height, Can_ride;
     Height = document.getElementById("Height").value;
-    Can_ride = (Height<52) ? "You are too short":"You are tall enough";
+    Can_ride = (Height<55) ? "You are too short":"You are tall enough"; //Ternary Operator
     document.getElementById("Ride").innerHTML = Can_ride +" to ride.";
 }
-function Vote_Function() {
-    var Age, Can_vote;
-    Age = document.getElementById("Age").value;
-    Can_vote = (Age < 18) ? "You are not old enough":"You are old enough";
-    document.getElementById("Vote").innerHTML = Can_vote + " to vote.";
-}
-function Vehicle(Make, Model, Year, Color) {
+function Vehicle(Make, Model, Year, Color) { //Constructor function for cars
     this.Vehicle_Make = Make;
     this.Vehicle_Model = Model;
     this.Vehicle_Year = Year;
     this.Vehicl_Color = Color;
 }
-var Jack= new Vehicle("Dodge", "Viper", 2020, "Red");
+var Jack= new Vehicle("Dodge", "Viper", 2020, "Red"); 
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 function carFunction() {
@@ -25,7 +19,7 @@ function carFunction() {
     " manufactured in " + Erik.Vehicle_Year;
 } 
 // Constructor function for Person objects
-function Person(first, last, age, eye) {
+function Person(first, last, age, eye) { 
     this.firstName = first;
     this.lastName = last;
     this.age = age;
