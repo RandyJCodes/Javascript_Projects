@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Challenge</title>
+        <meta charset="utf-8">
+
+        <script>
+            function validateForm() {
+              let x = document.forms["myForm"]["fname"].value;
+              let y = document.forms["myForm"]["lname"].value;
+              let z = document.forms["myForm"]["phone"].value;
+              if (x,y,z == "") {
+                alert("Form must be filled out.");
+                return false;
+              }
+            }
+            </script>
+    </head>
+    
+<body>
+
+<h2>HTML Forms</h2>
+
+<form name="myForm"  onsubmit="return validateForm()" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <label for="phone">Phone number:</label><br>
+  <input type="text" id="phone" name="phone" value="Phone number"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you hit submit with any empty fields, there will be an alert.</p>
+
+</body>
+</html>

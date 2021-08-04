@@ -1,3 +1,4 @@
+
 function getReceipt() {
     // This initializes our string so it can get passed from
     // function to function, growing line by line into a full receipt
@@ -56,3 +57,4 @@ function getTopping(runningTotal,text1) {
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
         runningTotal+".00"+"</strong></h3>";
 };
+

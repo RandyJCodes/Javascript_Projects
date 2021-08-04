@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="Randy"></p>
+
+        <script>
+            var myObj = '{ "name":"Randy", "age":25, "city":"Cleveland" }'; //The JSON String variable
+            var myJSON = JSON.parse(myObj); //Converts the JSON strings to javascript ojects
+            document.getElementById("Randy").innerHTML = myJSON.name + " from " + myJSON.city;
+        </script>
+    </body>
+<html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JSON string</title>
+		<meta charset="utf-8">
+		
+	</head>
+	<body>
+		<h2>Convert a JavaScript object into a JSON string, and send it to the server.</h2>
+        <p id="Json"></p>
+        <script>
+            var myObj = { "name":"Randy", "age":25, "city":"Cleveland" };
+            var myJSON = JSON.stringify(myObj);
+            document.getElementById("Json").innerHTML = myJSON;
+        </script>
+
+	</body>
+
+    <footer>
+        <hr>
+        <p>2021 | Randy Jackson</p>
+    </footer>
+</html>

@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+#Top {
+    height: 600px;
+    background-color: rgb(201, 65, 47);
+}
+  
+#Bottom {
+    height: 600px;
+    background-color: rgb(213, 216, 14);
+}

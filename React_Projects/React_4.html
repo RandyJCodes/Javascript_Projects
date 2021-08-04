@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>React 4</title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <style>
+            div.size {
+                background-color: lightgrey;
+                padding: 20px;
+              }
+              
+              @media screen and (min-width: 601px) {
+                div.size {
+                  font-size: 75px;
+                }
+              }
+              
+              @media screen and (max-width: 600px) {
+                div.size {
+                  font-size: 27px;
+                }
+              }
+        </style>
+    </Head>
+    <body>
+        
+
+        
+<div class="size">This will change sizes when you shrink your browser!</div>
+
+<p>When the browser's Width is 600px wide or less, the font size of div will lower to 27 px. Otherwize, the font size is 75px.</p>
+
+    </body>
+</html>

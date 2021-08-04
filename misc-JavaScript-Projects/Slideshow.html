@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>slideshow</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/Slideshow.css">
+</head>
+<body>
+    <h1>Slideshow</h1>
+
+    <!-- Jquery for slideshow -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() { 
+      $('#slideshow > div:first') //Infinite slideshow loop on the page
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+    }, 3000);
+    </script>
+
+    <div id="slideshow">
+        <div>
+          <img src="http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+        </div>
+        <div>
+          <img src="http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+        </div>
+    </div>
+
+</body>
+</html>
